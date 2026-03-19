@@ -1,5 +1,6 @@
 
 import React from "react";
+import Cart from "./Cart";
 import "./App.css";
 
 const Header = ({  }) => {
@@ -12,11 +13,7 @@ const Header = ({  }) => {
         <a href="#">Products</a>
         <a href="#">Contact</a>
       </nav>
-
-      <div className="cart">
-        <span className="cart-icon">🛒</span>
-        <span className="cart-count">{0}</span>
-      </div>
+      <Cart/>
     </header>
   );
 };
