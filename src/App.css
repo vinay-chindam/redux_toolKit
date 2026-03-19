@@ -99,3 +99,16 @@
 .add-btn:hover {
   background-color: #d18f00;
 }
+
+.login-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}

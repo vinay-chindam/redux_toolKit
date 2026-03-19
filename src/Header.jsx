@@ -3,6 +3,7 @@ import React from "react";
 import Cart from "./Cart";
 import "./App.css";
 import LoginButton from "./LoginButton";
+import ThemeButton from "./ThemeButton";
 
 const Header = ({  }) => {
   return (
@@ -14,6 +15,8 @@ const Header = ({  }) => {
         <a href="#">Products</a>
         <a href="#">Contact</a>
       </nav>
+      <ThemeButton/>
+    
       <LoginButton/>
       <Cart/>
     </header>
