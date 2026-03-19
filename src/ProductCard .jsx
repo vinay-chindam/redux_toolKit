@@ -1,18 +1,18 @@
 // ProductCard.jsx
 import React from "react";
 import "./App.css";
-import { useDispatch ,useSelector} from "react-redux";
-import { addItem,removeItem } from "../src/redux/CartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem, removeItem } from "../src/redux/CartSlice";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const handleAddToCart = () => {
-  if (isInCart) {
-    dispatch(removeItem(product));
-  } else {
-    dispatch(addItem(product));
-  }
-};
+    if (isInCart) {
+      dispatch(removeItem(product));
+    } else {
+      dispatch(addItem(product));
+    }
+  };
   const items = useSelector((store) => store.cart.items);
   const isInCart = items.includes(product.id);
   return (

@@ -2,6 +2,7 @@
 import React from "react";
 import Cart from "./Cart";
 import "./App.css";
+import LoginButton from "./LoginButton";
 
 const Header = ({  }) => {
   return (
@@ -13,6 +14,7 @@ const Header = ({  }) => {
         <a href="#">Products</a>
         <a href="#">Contact</a>
       </nav>
+      <LoginButton/>
       <Cart/>
     </header>
   );
