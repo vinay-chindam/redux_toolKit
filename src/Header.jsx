@@ -4,6 +4,7 @@ import Cart from "./Cart";
 import "./App.css";
 import LoginButton from "./LoginButton";
 import ThemeButton from "./ThemeButton";
+import Counter from "./Counter";
 
 const Header = ({  }) => {
   return (
@@ -16,6 +17,7 @@ const Header = ({  }) => {
         <a href="#">Contact</a>
       </nav>
       <ThemeButton/>
+      <Counter/>
     
       <LoginButton/>
       <Cart/>
